@@ -1,0 +1,5 @@
+gdb-binutils-arm-none-eabi-snapshot (20170914-1) unstable; urgency=low
+
+  * Initial version of package based on binutils-arm-none-eabi.
+
+ -- Frank Terbeck <ft@bewatermyfriend.org>  Fri, 14 Sep 2017 23:52:24 +0200

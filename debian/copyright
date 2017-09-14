@@ -1,0 +1,9 @@
+This is a Debian GNU/Linux packaged snapshot version of the GNU assembler,
+linker, binary utilities, and debugger. The packaging itself is based off
+of the binutils-arm-none-eabi package by Agustin Henze and James Troup.
+
+The package is based on a snapshot of the project's git repository at
+
+  git://sourceware.org/git/binutils-gdb.git
+
+which is covered by the GNU GPL.
