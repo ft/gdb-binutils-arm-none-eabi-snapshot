@@ -9,7 +9,7 @@ binutils_dir=/usr/src/binutils
 stampdir=debian/stamp
 
 source_version := $(shell dpkg-query -W -f="\$${Version}\n" binutils-source)
-deb_version := $(source_version)+$(shell dpkg-parsechangelog | sed -ne "s/^Version: \(.*\)/\1/p")
+deb_version := $(shell dpkg-parsechangelog | sed -ne "s/^Version: \(.*\)/\1/p")
 deb_upstream_version := $(shell echo $(deb_version) | cut -d- -f1)
 base_version := $(shell echo $(deb_version) | sed -e 's/\([1-9]\.[0-9]\).*-.*/\1/')
 
@@ -47,3 +47,10 @@ override_dh_installchangelogs:
 	dh_installchangelogs $(upstream_dir)/ChangeLog
 
 override_dh_auto_test:
+
+.PHONY: generate-orig-tarball
+generate-orig-tarball:
+	(cd src \
+	 && git archive --format=tar \
+	                --prefix="$(package)_$(deb_upstream_version)/src/" HEAD \
+	 | xz -1 > ../../$(package)_$(deb_upstream_version).orig.tar.xz;)
