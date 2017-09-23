@@ -41,6 +41,8 @@ Package: gdb-binutils-arm-none-eabi-snapshot
 Architecture: any
 Built-Using: ${Built-Using}
 Depends: ${misc:Depends}, ${shlibs:Depends}
+Conflicts: gdb-arm-none-eabi, binutils-arm-non-eabi
+Replaces: gdb-arm-none-eabi, binutils-arm-non-eabi
 Description: GNU debugger, assembler, linker and binary utilities for ARM
  Cortex-A/R/M processors Bare metal binutils for embedded ARM chips using
  Cortex-M0/M0+/M3/M4, Cortex-R4/R5/R7 and Cortex-A* processors. The programs in
