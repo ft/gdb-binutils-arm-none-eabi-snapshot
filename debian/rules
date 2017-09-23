@@ -30,7 +30,6 @@ configure_flags = \
 	--disable-nls \
 	--enable-plugins \
 	--enable-interwork \
-	--without-guile \
 	--with-system-zlib \
 	"--with-pkgversion=$(deb_version)" \
 	$(buildflags)
