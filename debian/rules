@@ -50,7 +50,9 @@ override_dh_auto_test:
 
 .PHONY: generate-orig-tarball
 generate-orig-tarball:
-	(cd src \
+	(set -x; pwd; f="../$(package)_$(deb_upstream_version).orig.tar.xz"; \
+	 test -e "$$f" && exit 0; \
+	 cd src \
 	 && git archive --format=tar \
 	                --prefix="$(package)_$(deb_upstream_version)/src/" HEAD \
-	 | xz -1 > ../../$(package)_$(deb_upstream_version).orig.tar.xz;)
+	 | xz -9 > "../$$f";)
