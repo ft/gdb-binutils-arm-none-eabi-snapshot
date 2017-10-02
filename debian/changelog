@@ -1,3 +1,9 @@
+gdb-binutils-arm-none-eabi-snapshot (20170914-2) unstable; urgency=medium
+
+  * Fix typo in debian/control that messed up Conflicts/Replaces.
+
+ -- Frank Terbeck <ft@bewatermyfriend.org>  Mon, 02 Oct 2017 14:43:10 +0200
+
 gdb-binutils-arm-none-eabi-snapshot (20170914-1) unstable; urgency=low
 
   * Initial version of package based on binutils-arm-none-eabi.
