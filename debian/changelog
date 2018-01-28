@@ -1,3 +1,9 @@
+gdb-binutils-arm-none-eabi-snapshot (20180128-1) unstable; urgency=medium
+
+  * Update upstream git submodule state.
+
+ -- Frank Terbeck <ft@bewatermyfriend.org>  Sun, 28 Jan 2018 21:26:45 +0100
+
 gdb-binutils-arm-none-eabi-snapshot (20170914-2) unstable; urgency=medium
 
   * Fix typo in debian/control that messed up Conflicts/Replaces.
