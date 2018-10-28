@@ -1,6 +1,6 @@
 Source: gdb-binutils-arm-none-eabi-snapshot
 Section: devel
-Priority: extra
+Priority: optional
 Maintainer: Frank Terbeck <ft@bewatermyfriend.org>
 Build-Depends:
  autoconf (>= 2.64),
@@ -18,9 +18,9 @@ Build-Depends:
  guile-2.0-dev,
  libbabeltrace-ctf-dev,
  libbabeltrace-dev,
+ libisl-0.18-dev,
  libcloog-isl-dev,
  libexpat1-dev,
- libisl-dev,
  liblzma-dev,
  libncurses5-dev,
  libreadline-dev,
@@ -34,8 +34,10 @@ Build-Depends:
  texlive-base,
  xz-utils,
  zlib1g-dev
-Standards-Version: 3.9.6
+Standards-Version: 4.2.0
 HomePage: https://sourceware.org/binutils/
+Vcs-Git: https://github.com/ft/gdb-binutils-arm-none-eabi-snapshot.git
+Vcs-Browser: https://github.com/ft/gdb-binutils-arm-none-eabi-snapshot
 
 Package: gdb-binutils-arm-none-eabi-snapshot
 Architecture: any
